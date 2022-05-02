@@ -26,10 +26,10 @@ DYN_LIB_TARGET		:= lib$(NAME).so.$(VERSION)
 EXEC_FLAGS			:= 
 
 # specific flags, libs and includes for proper compilation and linking
-CXX_FLAGS			+= -I/usr/include
+CXX_FLAGS			+=
 LD_FLAGS			+= 
 LD_LIBS				+= -lpthread -lm -lstdc++ -L.
-INCLUDE				:= -Iinclude/ -I/usr/local/include
+INCLUDE				:= -Iinclude/ -I/usr/local/include -I/usr/include
 
 MODULES				:=
 DEBUG				:=
